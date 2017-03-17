@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="2"
+    android:id="@+id/methods"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:text="Bank Transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/banktransaction" />
+
+        <CheckBox
+            android:text="Oxygen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/oxygen" />
+
+        <CheckBox
+            android:text="Citrus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/citrus" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:text="paytm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/paytm" />
+
+        <CheckBox
+            android:text="freecharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/freecharge" />
+
+        <CheckBox
+            android:text="State Bank Buddy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/statebankbuddy" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="13dp"
+            android:layoutMode="opticalBounds">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@color/SignupButton">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.25"
+                    android:id="@+id/parentcategory"
+                    android:text="Fruit"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@mipmap/ic_trending_flat_black_24dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.25"
+                    android:id="@+id/subcategory"
+                    android:text="Oranges"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="10dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:text="Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"
+                    android:layout_weight=".75"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/Qty"
+                    android:layout_weight="1"
+                    android:hint="200"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:background="@drawable/customborder"
+                    android:textAlignment="center" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".10"/>
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Qtyparameter"
+                    android:layout_weight="1.25"
+                    android:entries="@array/weigth"
+                    style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar" />
+
+                <TextView
+                    android:text="Check Msp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CheckMsp"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/pricelayout"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:text="Price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Pricelabel"
+                    android:layout_weight=".75"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/price"
+                    android:layout_weight="1"
+                    android:hint="200"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:background="@drawable/customborder"
+                    android:textAlignment="center" />
+                <TextView
+                    android:text="/"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".10"
+                    android:textAlignment="viewStart"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/black"
+                    />
+
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/priceparameter"
+                    android:layout_weight="1.25"
+                    android:entries="@array/weigth"
+
+                    style="@style/Widget.AppCompat.Spinner.DropDown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/MinQtylaout"
+                android:weightSum="4">
+
+                <TextView
+                    android:text="Min Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MinQtyLabel"
+                    android:layout_weight=".75"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:background="@drawable/customborder"
+                    android:id="@+id/MinQty"
+                    android:layout_weight="1"
+                    android:hint="200"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MinQtyparameter"
+                    android:layout_weight="1.25"
+                    android:entries="@array/weigth"
+                    style="@style/Widget.AppCompat.Spinner.DropDown" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Expected Expiry "
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ExpDateLabel"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner7"
+                    android:entries="@array/months"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+                    android:spinnerMode="dialog" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner8"
+                    android:entries="@array/TimePeriodType"
+                    android:layout_weight="1"
+
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:spinnerMode="dialog" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner2"
+                    android:layout_weight=".85"
+                    android:entries="@array/type"
+                    style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+                    android:spinnerMode="dialog" />
+
+                <TextView
+                    android:text="WareHouse Available"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/WareHouseAvaill"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:linksClickable="true"
+                    android:textColorLink="?android:attr/colorForeground"
+                    android:singleLine="true"
+                    android:textColor="@color/Black"
+                    android:autoLink="web"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

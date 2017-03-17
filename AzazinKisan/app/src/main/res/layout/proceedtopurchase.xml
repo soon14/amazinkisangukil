@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Order Summary "
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:background="@color/SignupButton"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.gukil.azazinkisan.general.fragment.buyer.OrderSummary"
+        android:id="@+id/fragment2"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:text="Choose Address"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.gukil.azazinkisan.general.fragment.common.AddAdress"
+        android:id="@+id/fragment"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:padding="10dp"
+        android:text="Choose Payment Method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@color/Green"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.gukil.azazinkisan.general.fragment.common.PaymentMethod"
+        android:id="@+id/fragment4" />
+</LinearLayout>

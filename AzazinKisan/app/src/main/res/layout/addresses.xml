@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:fadeScrollbars="true"
+    android:isScrollContainer="true"
+    android:outlineProvider="bounds"
+    android:overScrollMode="always"
+    android:background="@drawable/customborder"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:id="@+id/addresscard"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/customborder"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addressradio"
+                    tools:background="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="4"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                   >
+
+                    <TextView
+                        android:text="Pincode: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/PincodeText"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textStyle="normal|bold"
+                        android:textSize="18sp"
+                        android:singleLine="true"
+                       />
+
+                    <TextView
+                        android:text="122200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Pincode"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="false"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textStyle="normal|bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:maxLength="6"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_delete_black_24dp"
+                        android:id="@+id/deleteButton"
+                        android:layout_weight=".5"
+                        android:background="@android:color/transparent" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_mode_edit_black_24dp"
+                        android:id="@+id/EditButton"
+                        android:layout_weight=".5"
+                        android:background="@android:color/transparent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                     android:id="@+id/Landmark"
+                    android:layout_weight="1"
+                    android:text="JMD Mega Polis "
+                    android:layout_marginTop="10dp"
+                    android:editable="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textStyle="normal|bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:paddingTop="5dp"
+                    android:id="@+id/Address"
+                    android:layout_weight="1"
+                    android:text="Amazin Automation Solution India Pvt.Ltd.,Unit 116A,Level -1,Sohna Road"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:singleLine="false"
+                    android:editable="false"
+                    android:textStyle="normal|bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

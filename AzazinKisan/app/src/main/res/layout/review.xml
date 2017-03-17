@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewcard"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="68dp"
+                        app:srcCompat="@drawable/profile"
+                        android:id="@+id/BuyerImage"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:text="Client Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ClientName"
+
+                        android:textSize="24sp"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:text="Product is good in quality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Review"
+                        android:textAlignment="textStart"
+                        android:layout_marginTop="20dp"/>
+
+                    <RatingBar
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Rating_client"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:rating="5"
+                        android:gravity="left"
+
+                        android:layout_gravity="left"
+
+                        android:isIndicator="true"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:background="#f4fafa07"
+                        android:backgroundTint="#511010"
+                        android:foregroundTint="#f7e311" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:foregroundGravity="center|center_vertical"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:background="@drawable/customripple"
+        app:cardPreventCornerOverlap="false"
+
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:weightSum="5"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/product_image"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:id="@+id/product_titile"
+                android:text="Carrot"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:background="@drawable/rupees"
+                android:layout_weight=".25" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/priceperunit"
+                android:text="350/kg"
+                android:textColor="@color/Black"
+                android:textSize="17dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Qty"
+                android:textColor="@color/Black"
+                android:layout_marginRight="10dp"
+                android:textAlignment="textEnd"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.25"
+                android:id="@+id/qtyavailable"
+                android:text="100 Kg"
+                android:textColor="@color/Black"
+
+                android:textAlignment="textStart"
+                />
+
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minimum Qty should be purchaed 50Kg"
+                android:id="@+id/minimumqty"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

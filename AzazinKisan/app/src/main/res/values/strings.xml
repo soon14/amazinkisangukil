@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name"></string>
+
+    <!-- Strings related to login -->
+    <string name="Number">Mobile Name</string>
+    <string name="password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_number">This mobile number is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string-array name="weigth">
+        <item>Kg</item>
+        <item>Ton </item>
+
+    </string-array>
+
+    <string-array name="months">
+        <item>1</item>
+        <item>2 </item>
+        <item>3</item>
+        <item>4 </item>
+        <item>5</item>
+        <item>6-8 </item>
+        <item>8-10</item>
+        <item>10-12 </item>
+
+    </string-array>
+    <string-array name="type">
+        <item >Type</item>
+        <item>Banganapalli</item>
+        <item >Bangalora</item>
+        <item> Neelum</item>
+        <item >Rumani </item>
+        <item >Mulgoa</item>
+        <item >Alphonso</item>
+        <item >Totapuri</item>
+
+    </string-array>
+
+    <string-array name="TimePeriodType">
+        <item>Days</item>
+        <item>Week </item>
+        <item>Months </item>
+        <item>Year </item>
+    </string-array>
+    <string-array name="main_item_type">
+        <item >Product Category</item>
+        <item>Fruits</item>
+        <item >vegetables</item>
+        <item> Spices</item>
+        <item >Dry Fruits</item>
+
+
+    </string-array>
+
+
+    <string-array name="Sub_item_type">
+        <item >Sub_Product Category</item>
+        <item>Mango</item>
+        <item >Banana</item>
+        <item> Apple</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
